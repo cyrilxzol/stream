@@ -1,0 +1,46 @@
+{
+  "name": "icfs-stream",
+  "version": "0.1.1",
+  "browser": {
+    "stream": "readable-stream"
+  },
+  "bugs": {
+    "url": "https://github.com/kay404/it-to-stream/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "buffer": "^5.2.1",
+    "fast-fifo": "^1.0.0",
+    "get-iterator": "^1.0.2",
+    "p-defer": "^3.0.0",
+    "p-fifo": "^1.0.0",
+    "readable-stream": "^3.4.0"
+  },
+  "deprecated": false,
+  "description": "Convert streaming iterables to Node.js streams",
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "it-pair": "^1.0.0",
+    "nyc": "^14.1.1",
+    "standard": "^13.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/kay404/it-to-stream#readme",
+  "keywords": [
+    "stream",
+    "readablestream"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kay404/it-to-stream.git"
+  },
+  "scripts": {
+    "coverage": "nyc --reporter=text --reporter=lcov npm test",
+    "lint": "standard",
+    "test": "ava test/*.test.js --verbose"
+  }
+}
